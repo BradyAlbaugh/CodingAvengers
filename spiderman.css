@@ -1,0 +1,29 @@
+header img{
+    border-radius: 25%;
+}
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: linear-gradient(rgba(248, 26, 48, 0.612), rgba(21, 99, 235, 0.596)), url(../images/skyline.avif);
+    background-size: cover;
+}
+.top{
+    text-align: center;
+}
+main{
+    text-align: center;
+}
+h1, h2, p, li{
+    color: #fff;
+}
+.int{
+    padding: 0 30%;
+ 
+}
+.gadget li{
+    padding: 0 3% 0 0;
+}
+
+/* url(../img/skyline.avif) fixed  */
+/* background: linear-gradient(rgba(248, 26, 48, 0.612), rgba(21, 99, 235, 0.596)), url(../img/skyline.avif) fixed ;  */

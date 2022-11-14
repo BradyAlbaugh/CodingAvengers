@@ -1,0 +1,39 @@
+form{
+    padding: 0px;
+    margin:0px;
+    background-color: #c0c0c0;
+    color:rgb(4,0,255);
+}
+textarea{
+    resize:none;
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+.input{
+    padding-right: 10px;
+}
+.align label{
+    display:inline-block;
+    width: 140px;
+    margin: 1px;
+    padding: 1px;
+}
+label{
+    color:black;    
+}
+input[type=submit]{
+    background-color: rgb(4,0,255);
+    color:ghostwhite;
+    padding: 5px;
+    margin: 10px;
+    border:none;
+    border-radius: 10%;
+}
+input[type=radio]{
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+}

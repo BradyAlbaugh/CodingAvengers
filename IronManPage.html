@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Iron Man</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/styles/style.css">
+<link rel="icon" type=image href="images/ironManIconImage.png">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 3000px;
+  
+  
+  background-color: black;}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+   
+  }
+img{
+  display:block;
+  height: 600px;
+} 
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 100px;
+  width: auto;
+  margin-top: 220px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(241, 238, 232, 0.219);
+  
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/4 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}  
+}
+#IronManInfo video {width: 70%;
+                margin-top: 12px;}
+
+#IronManInfo  {
+                  background-color: black;
+               height: 580px;
+               }
+
+#IronManInfo nav {color: rgb(255, 255, 255);
+               font-size: 12px; 
+              float: right;
+              margin-right: 70px;
+              margin-top: 20px;
+              padding: 10px;
+              }
+h1 {font-size: 14px;
+  color: #bbb;}
+#ironman {padding: 30px;
+        background-color: black;
+        color: white;}
+#nav1 p {color: black;
+   text-align: center;
+  
+  padding-top:  50px;}
+#nav1 {background-color: rgb(196, 184, 184);
+}
+</style>
+</head>
+<body class="">
+
+<!-- Navbar -->
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <h1 style="font-size: 45px; color: rgb(255, 255, 255);">Iron Man</h1>
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="HomePage.html" class="w3-bar-item w3-button w3-padding-large">Home</a>    
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">Avengers<i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="CaptainAmericaPage.html" class="w3-bar-item w3-button">Captain America</a>
+        <a href="HulkPage.html" class="w3-bar-item w3-button">Hulk</a>
+        <a href="IronManPage.html" class="w3-bar-item w3-button">Iron Man</a>
+        <a href="ThorPage.html" class="w3-bar-item w3-button">Thor</a>
+        <a href="SpiderManPage.html" class="w3-bar-item w3-button">Spider-Man</a>
+        <a href="BlackPantherPage.html" class="w3-bar-item w3-button">Black Panther</a>
+      </div>
+    </div>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE<i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="AboutUs.html" class="w3-bar-item w3-button">About Us</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Page content -->
+<div class="w3-content padding-top" style="max-width:2000px;margin-top:46px">
+  <div id="nav1">
+    <p>--- Click the arrow buttons to move the Iron Man ---</p>
+  </div>
+  <!--Ironmananimated sketches-->
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+
+    
+    <div class="mySlides">
+      
+      <img src="IronMan/Untitled.001.jpeg" style="width:100%">
+      
+    </div>
+
+    <div class="mySlides">
+      
+      <img src="IronMan/Untitled.002.jpeg" style="width:100%">
+      
+    </div>
+
+    <div class="mySlides">
+    
+      <img src="IronMan/Untitled.003.jpeg" style="width:100%">
+      
+    </div>
+
+    <div class="mySlides">
+      
+      <img src="IronMan/Untitled.004.jpeg" style="width:100%">
+      
+    </div>
+    <div class="mySlides">
+      
+      <img src="IronMan/Untitled.005.jpeg" style="width:100%">
+      
+    </div>
+    <div class="mySlides">
+      
+      <img src="IronMan/Untitled.006.jpeg" style="width:100%">
+      
+    </div>
+    <div class="mySlides">
+      
+      <img src="IronMan/Untitled.007.jpeg" style="width:100%">
+      
+    </div>
+    <div class="mySlides">
+      
+      <img src="IronMan/Untitled.008.jpeg" style="width:100%">
+      
+    </div>
+    <div class="mySlides">
+      
+      <img src="IronMan/Untitled.009.jpeg" style="width:100%">
+      
+    </div>
+    <div class="mySlides">
+      
+      <img src="IronMan/Untitled.010.jpeg" style="width:100%">
+      
+    </div>
+    <div class="mySlides">
+      
+      <img src="IronMan/Untitled.011.jpeg" style="width:100%">
+      
+    </div>
+    <div class="mySlides">
+      
+      <img src="IronMan/Untitled.012.jpeg" style="width:100%">
+      
+    </div>
+    <div class="mySlides">
+      
+      <img src="IronMan/Untitled.013.jpeg" style="width:100%">
+      
+    </div>
+    <div class="mySlides">
+      
+      <img src="IronMan/Untitled.014.jpeg" style="width:100%">
+      
+    </div>
+    <div class="mySlides">
+      
+      <img src="IronMan/Untitled.015.jpeg" style="width:100%">
+      
+    </div>
+    <div class="mySlides">
+      
+      <img src="IronMan/Untitled.016.jpeg" style="width:100%">
+      
+    </div>
+    <div class="mySlides">
+      
+      <img src="IronMan/Untitled.017.jpeg" style="width:100%">
+      
+    </div>
+    <div class="mySlides">
+      
+      <img src="IronMan/Untitled.018.jpeg" style="width:100%">
+      
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)" >&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    
+  </div>  
+    
+
+<!-- End Page Content -->
+</div>
+<div id = "IronManInfo">
+  <video width="800"  autoplay loop>
+    <source src="IronMan/ironman1.m4v" type="video/mp4" >
+    
+     Your browser does not support the video tag.
+  </video>
+  <nav>
+    <h1>HEIGHT</h1>
+    <p>6'1'', In Armor: 6'6''</p>
+    <h1>WEIGHT</h1>
+    <p>225 lbs., In Armor: 425 lbs.</p>
+    <h1>GENDER</h1>
+    <p>Male</p>
+    <h1>EYES</h1>
+    <p>Blue</p>
+    <h1>HAIR</h1>
+    <p>Black</p>
+  </nav>
+</div>
+<div id= "ironman">
+  <p>* The primary weapon contained within every suit,
+     the repulsor rays use energy pulses to repel and 
+     disrupt enemies and are generated through the suit's 
+     gauntlets. The suit's booster jets enable Stark to 
+     fly fast enough to break the sound barrier, 
+     and maneuver more quickly than any fighter jet.</p>
+  <p>* Iron Man’s helmet provides Tony with a heads-up display 
+    that gives him 360-degree vision, access to information
+    about his surroundings and enemies, and the ability to 
+    transmit and block transmissions along any frequency. 
+    The helmet also gives Tony a degree of resistance to EMP and psychic-based attacks.</p>
+  <p>* A weapon centered in Iron Man’s chest, the unibeam is 
+    capable of projecting dazzling light, and can also be
+    used as a powerful force beam that is even more powerful than the repulsor ray.</p>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+</footer>
+
+<!--Function for the slideshow-->
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  
+  
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length} 
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";}
+</script>
+
+</body>
+</html>

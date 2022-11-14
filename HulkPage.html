@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Hulk</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type=image href="images/hulkIconImage.jpg">
+<link rel="stylesheet" href="/styles/style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="/styles/hulk.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body class="background">
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <h1>Hulk</h1>
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="HomePage.html" class="w3-bar-item w3-button w3-padding-large">Home</a>    
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">Avengers<i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="CaptainAmericaPage.html" class="w3-bar-item w3-button">Captain America</a>
+        <a href="HulkPage.html" class="w3-bar-item w3-button">Hulk</a>
+        <a href="IronManPage.html" class="w3-bar-item w3-button">Iron Man</a>
+        <a href="ThorPage.html" class="w3-bar-item w3-button">Thor</a>
+        <a href="SpiderManPage.html" class="w3-bar-item w3-button">Spider-Man</a>
+        <a href="BlackPantherPage.html" class="w3-bar-item w3-button">Black Panther</a>
+      </div>
+    </div>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE<i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="AboutUs.html" class="w3-bar-item w3-button">About Us</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Page content -->
+<div class="w3-content padding-top" style="max-width:2000px;margin-top:46px">
+
+  <!-- Slide Show -->
+  <section>
+    <img class="mySlides" src="/images/Hulk.jpg" style="width:100%;height:700px;">
+    <img class="mySlides" src="/images/hulk4.jpg" style="width:100%;height:700px;">
+    <img class="mySlides" src="/images/incredible-hulk-avengers-ue-3840x2160.jpg" style="width:100%;height:700px;">
+    <img class="mySlides" src="/images/Grey_Hulk.jpg" style="width:100%;height:700px;">
+  </section>
+  
+  <section class="about">
+    <!--Informational Content-->
+    <div class="hulk">
+      <h1>Robert Bruce Banner Biography</h1>
+      <p>Before The Hulk there was Dr.Robert Bruce Banner. Bruce is one of thee best nuclear physics around the world.
+        During an expirament to replicate a super soldior using gama rays, he accidentally detonated a bomb. While it was
+        going off he had to save the life of Rick Jones. Which is what ultimately lead to him getting exposed to gama rays and transforming
+        into The Hulk. 
+      </p>
+      <h2>The Hulk Biography</h2>
+      <p>After the explosion and gain of an alter ego Bruce Banner became The Hulk.
+        He is only occasionally capable of controlling it. The times he can't is when he is very mad and 
+        can't hold it in. Before The Hulk became The Hulk he had many connections with women, but once in The Hulk form 
+        he has a strong connection/love for a women named Betty Ross.
+      </p>
+      <h3>Hulk Powers</h3>
+      <div class="list">
+        <ul>
+            <li>Super Strength</li>
+            <li>Immunity to almost any earth capable damage</li>
+            <li>Super human speed due to having a super jump</li>
+            <ul>
+                <li>Capable of catching Bullets/Missiles coming in at fully speed</li>
+            </ul>
+            <li>The most unknown thing is Grey Hulk</li>
+            <ul>
+                <li>Has a very sarcastic and errogant personality</li>
+                <li>Also is less powerful than the green hulk</li>
+            </ul>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  </div>
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+</footer>
+<script>
+let slideIndex = 0;
+// Automatic Slideshow - change image every 4 seconds
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}    
+    x[slideIndex-1].style.display = "block";  
+    setTimeout(carousel, 8000);    
+  }
+</script>
+</body>
+</html>
